@@ -1,7 +1,5 @@
-
 class MyModel {
   String? image;
-
 
   MyModel({this.image});
 }
@@ -11,7 +9,9 @@ var modelValue = [
     image: '1.jpg',
   ),
   MyModel(
-    image: '2.jpg',  ),
+    image: '2.jpg',
+  ),
   MyModel(
-    image: '3.jpg',  )
+    image: '3.jpg',
+  )
 ];

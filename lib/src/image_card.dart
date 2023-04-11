@@ -1,10 +1,13 @@
-
 import 'package:flutter/material.dart';
 
-
 class ImageCard extends StatelessWidget {
-  const ImageCard({Key? key, this.active, this.index, required this.myModel, required this.height})
-      : super(key: key);
+  const ImageCard({
+    Key? key,
+    this.active,
+    this.index,
+    required this.myModel,
+    required this.height,
+  }) : super(key: key);
 
   final bool? active;
   final int? index;
@@ -38,10 +41,12 @@ class ImageCard extends StatelessWidget {
                     offset: Offset(0, offset)),
               ],
               image: DecorationImage(
-                  fit: BoxFit.cover,
-                  image: AssetImage('assets/images/${myModel!.image}')),
+                fit: BoxFit.cover,
+                image: AssetImage(
+                  'assets/images/${myModel!.image}',
+                ),
+              ),
             ),
-           
           ),
         ),
       ],
